@@ -1,0 +1,52 @@
+{% extends "home/header.html" %}
+ 
+	{% block content %}
+		{% load staticfiles %}
+		<div id="accordion">
+  			<div class="card">
+    			<div class="card-header" id="headingOne">
+      				<h5 class="mb-0">
+        				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Phone Number
+       				 	</button>
+      				</h5>
+    			</div>
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      				<div class="card-body">
+      					01-4106811 <br>
+      					9851200510
+      				</div>
+    			</div>
+  			</div>
+  		<div class="card">
+    		<div class="card-header" id="headingTwo">
+      			<h5 class="mb-0">
+        			<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Location
+        			</button>
+      			</h5>
+    		</div>
+    		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+     		 	<div class="card-body">
+       				Ananteshowr Munipalicity Balkot, <br>
+       				Bhaktapur <br>Nepal
+      			</div>
+    		</div>
+  		</div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          E-mail
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+       dharkoart@gmail.com
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div><iframe src="https://www.google.com/maps/place/Kathmandu+44600/@27.7089559,85.2911132,13z/data=!3m1!4b1!4m5!3m4!1s0x39eb198a307baabf:0xb5137c1bf18db1ea!8m2!3d27.7172453!4d85.3239605" frameborder="5"></iframe>
+</div> -->
+	{% endblock %}

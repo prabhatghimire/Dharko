@@ -1,0 +1,24 @@
+{% extends "home/header.html" %}
+
+{% block content %}
+	{% load staticfiles %}
+{% load admin_static%}
+
+<div class="row">
+
+{% for  Gallery in  object_list%}
+
+
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+      	<img class="card-img-top img-fluid" src="{{Gallery.body.url}}">
+        <h3 class="card-title">{{Gallery.title}}</h3>
+        <p class="card-text">{{Gallery.detail}}</p>
+      </div>
+    </div>
+  </div> 
+  {% endfor %}
+  </div>
+{% endblock %}

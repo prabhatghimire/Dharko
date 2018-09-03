@@ -1,0 +1,12 @@
+{% extends "home/header.html" %}
+ 
+	{% block content %}
+		{% load staticfiles %}
+		<div class="alert alert-success" role="alert">
+		{% for  about in  object_list%}
+		
+			{{ about.detail}}
+		
+		{% endfor %}
+		</div>
+	{% endblock %}

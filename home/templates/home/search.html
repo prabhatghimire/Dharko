@@ -1,0 +1,40 @@
+{% extends "home/header.html" %}
+
+{% block content %}
+	{% load staticfiles %}
+{% load admin_static%}
+
+<div class="row">
+
+{% for  Gallery in  result%}
+
+
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+      	<img class="card-img-top img-fluid" src="{{Gallery.body.url}}">
+        <h3 class="card-title">{{Gallery.title}}</h3>
+      <a href="/service/">view</a>
+
+      </div>
+    </div>
+  </div> 
+  {% endfor %}
+  {% for  Gallery in  result1%}
+
+
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top img-fluid" src="{{Gallery.body.url}}">
+        <h3 class="card-title">{{Gallery.title}}</h3>
+        <a href="/gallery/">view</a>
+
+      </div>
+    </div>
+  </div> 
+  {% endfor %}
+  </div>
+{% endblock %}
