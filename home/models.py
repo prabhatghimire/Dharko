@@ -12,8 +12,8 @@ class Service(models.Model):
 
 
 class About(models.Model):
-    detail=models.TextField(max_length=14000)
+	name = models.CharField(max_length=140)
+	photo = models.FileField()
+	detail=models.TextField(max_length=14000)
 
-
-    def __str__(self):
-        return self.detail
+	def __str__(self): return self.name

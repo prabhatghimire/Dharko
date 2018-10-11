@@ -4,9 +4,12 @@
 		{% load staticfiles %}
 		<div class="alert alert-success" role="alert">
 		{% for  about in  object_list%}
-		
-			{{ about.detail}}
-		
+		<div align="center">
+			<img src="{{ about.photo.url}}" alt="" width="300rem">
+	
+		<div><p class="quatation"><b >{{ about.name}}</b></div>
+		</div>
+		<p class="text-justify">{{ about.detail}}</p>
 		{% endfor %}
 		</div>
 	{% endblock %}

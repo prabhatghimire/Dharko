@@ -6,20 +6,16 @@
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 		<script src="{% static 'home/js/jquery.min.js' %}" type="text/javascript"></script>
-    <script src="{% static 'home/js/bootstrap.js' %}" type="text/javascript"></script>
     <script src="{% static 'home/js/bootstrap.min.js' %}" type="text/javascript"></script>
-		<link rel="stylesheet" href="{% static 'home/css/style.css' %}" type = "text/css"/>
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}" type = "text/css"/>
+
+    
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/font-awesome-4.6.3/css/font-awesome.css' %}" >
     <link rel="stylesheet" href="{% static 'home/css/gallery.css' %}" type = "text/css"/>
-		<link rel="stylesheet" href="{% static 'home/font-awesome-4.6.3/css/font-awesome.css' %}" >
-		<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
-		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{% static 'home/css/style.css' %}" type = "text/css"/>
 	
-	<style type="text/css">
-		html,
-		body {
-		  height:100%
-		}
-	</style>
+
 </head>
 
 <body class="body" >
@@ -65,8 +61,8 @@
 	{% endblock %}
 	
 <!-- Footer -->
-<footer class="page-footer font-small blue-grey lighten-5">
-
+<!-- <footer class="page-footer font-small blue-grey lighten-5"  style="background-image: url('{% static 'home/img/footer.jpg' %}'); background-size:100% 100%;" > -->
+<footer class="page-footer font-small blue-grey lighten-5"  style="background-color: #D7F5F2">
     <div style="background-color: #21d192;">
       <div class="container">
 
@@ -191,9 +187,9 @@
   <div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
       <a class="dark-grey-text" href="/"> Dharko Creation. All Rights Reserved</a>
       <div class="footer-copyright text-center text-black-50 py-3" style="font-size: 0.9rem;">Powered By:
-      <a class="dark-grey-text" href="#!"> RedMoon group</a> 
+      <a class="dark-grey-text" href="https://www.facebook.com/prabhat.ghimire.940"> Prabhat Ghimire</a> 
     </div>
-
+</div>
 </div>
     
     <!-- Copyright -->
