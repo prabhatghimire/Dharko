@@ -28,7 +28,7 @@ def search(request):
 			result1 =Gallery.objects.all().filter(Q(title__icontains=something)
 			 | Q(detail__icontains=something))
 			return render(request, 'home/search.html', {'result': result, 'result1': result1})
-	return render(request, 'home/home.html', {'form': form})
+	return render(request, 'home/home.html', {'form': form })
 
 # class GalleryDetailView(DetailView):
 
